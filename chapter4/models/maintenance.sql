@@ -147,4 +147,4 @@ where excavator_id in (
             or coolant_level != 'P'
             or hydraulic_valves != 'P'
     )
-    and job_id = 423;
+    and job_id = 423

@@ -65,3 +65,28 @@ chapter5:
       password: mariadb
       driver: MySQL ODBC 8.0 ANSI Driver
 
+
+mask_intro:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: [1 or more]
+      host: [host]
+      port: [port]
+      user: [dev_username]
+      pass: [dev_password]
+      dbname: [dbname]
+      schema: [dev_schema]
+
+    prod:
+      type: postgres
+      threads: [1 or more]
+      host: [host]
+      port: [port]
+      user: [prod_username]
+      pass: [prod_password]
+      dbname: [dbname]
+      schema: [prod_schema]
+
+  target: dev

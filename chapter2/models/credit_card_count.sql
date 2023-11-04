@@ -2,6 +2,7 @@
 
 {{ config(materialized='table') }}
 
-select payment, count(payment) as count
+select payment, count(*) as count
 from {{ ref('taxi_trips') }}
-where payment = "credit card"
+where payment = 'credit card'
+group by payment

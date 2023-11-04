@@ -1,0 +1,11 @@
+chapter4:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: oluwafemisobakin
+      password: Derindura2577@
+      port: 5432
+      dbname: mlops
+      schema: public
